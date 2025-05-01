@@ -21,22 +21,15 @@ header h1 {
   font-family: 'Arial', sans-serif;
 }
 
-/* Hero Section */
-section.hero {
-  background-color: #1e40af;
-  color: white;
+/* Main Section */
+main {
+  padding: 0 20px;
 }
 
-section.hero h2 {
+h2 {
   font-weight: bold;
 }
 
-/* Key Features */
-section h3 {
-  font-weight: bold;
-}
-
-/* Buttons Hover Effects */
 button:hover {
   opacity: 0.9;
 }
@@ -45,25 +38,39 @@ button:hover.bg-blue-600 {
   background-color: #2563eb;
 }
 
-button:hover.bg-yellow-500 {
-  background-color: #eab308;
+button:hover.text-white {
+  color: white;
 }
 
-/* Form Styling */
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+button:hover.border-blue-600 {
+  border-color: #2563eb;
+}
+
+button:hover.bg-blue-600:hover {
+  background-color: #1e40af;
+}
+
+/* Features Section */
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+section div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+section div:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 /* Footer */
 footer {
-  background-color: #1e40af;
   padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  color: white;
 }
